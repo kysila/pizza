@@ -1,0 +1,76 @@
+@media screen and (min-width: 640px) {
+  .gallery {
+    &__item {
+      height: 150px;
+      width: calc(100% - 142px);
+      font-size: 36px;
+      line-height: 150px;
+      &::after {
+        width: 142px;
+        height: 150px;
+        right: -142px;
+        background: url("../../img/arrow-640.png") $bg-prop;
+      }
+      &--pizza {
+        background: url("../../img/pizza-bg-640.png") -45% 95% no-repeat;
+        background-size: cover;
+      }
+      &--salads {
+        background: url("../../img/salads-bg-640.png") -45% 68% no-repeat;
+        background-size: cover;
+      }
+      &--desserts {
+        background: url("../../img/desserts-bg-640.png") -45% 14% no-repeat;
+        background-size: cover;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 980px) {
+  .gallery {
+    flex-direction: row;
+    &__item {
+      height: 327px;
+      width: calc(100% / 3);
+      font-size: 38px;
+      line-height: 327px;
+      &::after {
+        display: none;
+      }
+      &--pizza {
+        background: url("../../img/pizza-bg-980.png") -45% 95% no-repeat;
+        background-size: cover;
+      }
+      &--salads {
+        background: url("../../img/salads-bg-980.png") -45% 68% no-repeat;
+        background-size: cover;
+      }
+      &--desserts {
+        background: url("../../img/desserts-bg-980.png") -45% 14% no-repeat;
+        background-size: cover;
+      }
+    }
+  }
+}
+
+
+@media screen and (min-width: 1200px) {
+  .gallery {
+    &__item {
+      font-size: 43px;
+      &--pizza {
+        background: url("../../img/pizza-bg-1200.png") -45% 95% no-repeat;
+        background-size: cover;
+      }
+      &--salads {
+        background: url("../../img/salads-bg-1200.png") -45% 68% no-repeat;
+        background-size: cover;
+      }
+      &--desserts {
+        background: url("../../img/desserts-bg-1200.png") -45% 14% no-repeat;
+        background-size: cover;
+      }
+    }
+  }
+}

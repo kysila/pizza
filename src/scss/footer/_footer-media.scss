@@ -1,0 +1,28 @@
+@media screen and (min-width: 640px) {
+  .footer {
+    height: 97px;
+    &__info {
+      font-size: 18px;
+      line-height: 26px;
+    }
+  }
+}
+
+@media screen and (min-width: 980px) {
+  .footer {
+    padding: 0 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    box-sizing: border-box;
+    &__info {
+      margin: 0;
+      width: 80%;
+      text-align: right;
+    }
+    &__new-line {
+      display: none;
+    }
+  }
+
+}

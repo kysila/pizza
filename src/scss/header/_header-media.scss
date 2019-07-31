@@ -1,0 +1,146 @@
+@media screen and (min-width: 640px) {
+  .header {
+    &__navigation {
+      height: 74px;
+    }
+
+    &__menu-title {
+      font-size: 24px;
+    }
+
+    &__btn {
+      width: 82px;
+    }
+
+    &__btn-line {
+      @include btn-line-640;
+
+      &--top {
+        top: 26px;
+      }
+
+      &--bottom {
+        top: 46px;
+      }
+    }
+    &__main {
+      padding-top: 30px;
+      padding-left: 38px;
+      height: 346px;
+      background: url("../../img/header-bg-640.png") center center no-repeat;
+      background-size: cover;
+    }
+    &__title {
+      margin-bottom: 24px;
+      font-size: 36px;
+      line-height: 38px;
+    }
+    &__link {
+      font-size: 24px;
+    }
+    &__menu-list {
+      width: 243px;
+      height: 214px;
+      top: 75px;
+      right: 0;
+
+      & li {
+        padding-left: 27px;
+        height: 41px;
+        font-size: 12px;
+        line-height: 40px;
+      }
+    }
+
+    .rotate-l {
+      @include rotate-line-640;
+    }
+
+    .rotate-r {
+      @include rotate-line-640;
+    }
+  }
+}
+
+@media screen and (min-width: 980px) {
+  .header {
+    &__navigation {
+      height: 97px;
+    }
+    &__menu-title {
+      display: none;
+    }
+    &__menu-list {
+      padding-left: 30px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 97px;
+      width: 70%;
+      top: 0;
+      left: 0;
+      & li {
+        width: auto;
+        padding: 0;
+        height: 16px;
+        font-size: 15px;
+        font-family: $mont-r;
+        text-transform: uppercase;
+        background: transparent;
+        border: none;
+        line-height: 26px;
+        & a {
+          color: #ffffff;
+        }
+        &:hover {
+          background: transparent;
+        }
+      }
+    }
+    &__btn {
+      display: none;
+    }
+    &__logo {
+      display: block;
+      position: absolute;
+      top: 8px;
+      right: 30px;
+    }
+    &__main {
+      padding-top: 64px;
+      padding-left: 30px;
+      height: 530px;
+      background: url("../../img/header-bg-980.png") $bg-prop;
+      background-size: cover;
+    }
+    &__title {
+      margin-bottom: 57px;
+      font-size: 54px;
+      line-height: 64px;
+    }
+    &__link {
+      font-size: 34px;
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .header {
+    &__menu-list {
+      padding-left: 37px;
+    }
+    &__main {
+      padding-top: 58px;
+      padding-left: 37px;
+      height: 649px;
+      background: url("../../img/header-bg-1200.png") $bg-prop;
+      background-size: cover;
+    }
+    &__title {
+      font-size: 62px;
+    }
+    &__link {
+      font-size: 38px;
+    }
+  }
+}

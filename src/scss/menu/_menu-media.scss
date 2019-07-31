@@ -1,0 +1,171 @@
+@media screen and (min-width: 640px) {
+  .menu {
+    padding: 45px 0;
+    &__title {
+      margin-left: 21px;
+      font-size: 40px;
+    }
+    &__subtitle {
+      margin-top: 9px;
+      margin-bottom: 20px;
+      font-size: 18px;
+    }
+    &__container {
+      padding-bottom: 40px;
+    }
+    &__container-title {
+      padding-left: 37px;
+      margin-bottom: 38px;
+      height: 75px;
+      font-size: 40px;
+      line-height: 75px;
+    }
+    &__dishes {
+      padding: 0 37px 5px 37px;
+    }
+    &__dishes-list {
+      margin-top: 45px;
+      margin-bottom: 47px;
+      font-size: 30px;
+      &--desert {
+        background: url("../../img/desert-icon-640.png") $bg-prop;
+        @include dish-icon-640;
+      }
+      &--vine {
+        background: url("../../img/vine-icon-640.png") $bg-prop;
+        @include dish-icon-640;
+      }
+      &--coffee {
+        background: url("../../img/coffe-icon-640.png") $bg-prop;
+        @include dish-icon-640
+      }
+      &--beer {
+        background: url("../../img/beer-icon-640.png") $bg-prop;
+        @include dish-icon-640;
+      }
+    }
+  }
+
+  .dish {
+    margin-top: 22px;
+    grid-template-rows: 25px 1fr;
+    grid-template-columns: 1fr 78px;
+    grid-row-gap: 21px;
+    &__name {
+      font-size: 27px;
+    }
+    &__price {
+      font-size: 27px;
+    }
+    &__desc {
+      font-size: 18px;
+      word-spacing: 2px;
+    }
+  }
+}
+
+
+@media screen and (min-width: 980px) {
+  .menu {
+    padding: 72px 0;
+    &__title {
+      font-size: 34px;
+      margin-left: 30px;
+      position: relative;
+    }
+    &__subtitle {
+      margin-top: 10px;
+      margin-bottom: 21px;
+      font-size: 20px;
+    }
+    &__logo {
+      display: block;
+      position: absolute;
+      right: 29px;
+      top: -12px;
+    }
+    &__box {
+      display: flex;
+      width: 100%;
+      flex-direction: row;
+    }
+    &__container {
+      width: 50%;
+      padding-bottom: 84px;
+    }
+    &__container-title {
+      padding-left: 18px;
+      margin-bottom: 41px;
+      height: 75px;
+      font-size: 34px;
+      line-height: 75px;
+    }
+    &__dishes {
+      padding: 0 13px 5px 16px;
+    }
+    &__dishes-list {
+      margin-top: 45px;
+      margin-bottom: 46px;
+      font-size: 26px;
+      &--desert {
+        background: url("../../img/desert-icon-980.png") $bg-prop;
+        @include dish-icon-640;
+      }
+      &--vine {
+        background: url("../../img/vine-icon-980.png") $bg-prop;
+        @include dish-icon-640;
+      }
+      &--coffee {
+        background: url("../../img/coffee-icon-980.png") $bg-prop;
+        @include dish-icon-640
+      }
+      &--beer {
+        background: url("../../img/beer-icon-980.png") $bg-prop;
+        @include dish-icon-640;
+      }
+    }
+  }
+
+  .dish {
+    margin-top: 22px;
+    grid-template-rows: 25px 1fr;
+    grid-template-columns: 1fr 78px;
+    grid-row-gap: 21px;
+    &__name {
+      font-size: 24px;
+    }
+    &__price {
+      font-size: 24px;
+    }
+    &__desc {
+      font-size: 16px;
+      word-spacing: 1px;
+    }
+  }
+}
+
+
+@media screen and (min-width: 1200px) {
+  .menu {
+    &__title {
+      font-size: 40px;
+    }
+    &__container-title {
+      font-size: 40px;
+    }
+    &__disher-list {
+      font-size: 30px;
+    }
+  }
+  .dish {
+    &__name {
+      font-size: 27px;
+    }
+    &__price {
+      font-size: 27px;
+    }
+    &__desc {
+      font-size: 18px;
+    }
+  }
+}
